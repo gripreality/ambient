@@ -40,7 +40,7 @@ class ACL204:
 
         try:
             #command = "*A39*I0:" + str(newFrameformat) + "*Z" #Legacy Code
-            command = "*A86*I0:" + str(newFrameformat) + "*Z" #Legacy Code
+            command = "*A86*I0:" + str(newFrameformat) + "*Z"
             self.unit.write(bytes(command, "ASCII"))
             print("setFrameFormat:", frame_index.get(newFrameformat, "Invalid Selection"))
         except:
